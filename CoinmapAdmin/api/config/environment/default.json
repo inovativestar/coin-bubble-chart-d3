@@ -1,0 +1,12 @@
+{
+    "api": {
+      "version": "v1"
+    },
+  
+    "session": {
+      "encryptionKey": "ghfNoqddfbZughq",
+      "sessionKey": "coinmap_admin_session",
+      "sessionExpirationTime": 604800000
+    }
+}
+  

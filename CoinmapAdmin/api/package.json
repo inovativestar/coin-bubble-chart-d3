@@ -1,0 +1,49 @@
+{
+  "name": "coinmap-admin",
+  "version": "1.2.3",
+  "author": "Ding",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "client": "cd client && yarn start",
+    "build-client": "cd client && yarn build",
+    "server": "cd server && nodemon app.js",
+    "start": "cd server && node app.js",
+    "seed": "cd server && cd db && node seed.js",
+    "dev-start": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
+    "test": "mocha server/**/*.test.js",
+    "watch-test": "nodemon --exec \"yarn test\""
+  },
+  "engines": {
+    "node": "6.11.2"
+  },
+  "dependencies": {
+    "bcrypt": "^3.0.2",
+    "bcryptjs": "^2.4.3",
+    "bluebird": "^3.4.1",
+    "body-parser": "^1.18.2",
+    "concurrently": "^3.5.1",
+    "cors": "^2.8.5",
+    "express": "^4.16.2",
+    "express-session": "^1.14.1",
+    "express-winston": "^2.0.0",
+    "http-status-codes": "^1.3.0",
+    "jsonwebtoken": "^8.2.0",
+    "lodash": "^4.17.5",
+    "mongodb": "^3.0.2",
+    "mongoose": "^5.0.5",
+    "n-custom-errors": "^1.0.0",
+    "nconf": "^0.8.4",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
+    "request": "^2.88.0",
+    "require-dir": "^0.3.0",
+    "winston": "^2.2.0"
+  },
+  "devDependencies": {
+    "expect": "^22.3.0",
+    "mocha": "^5.0.1",
+    "nodemon": "^1.15.0",
+    "supertest": "^3.0.0"
+  }
+}

@@ -1,0 +1,135 @@
+{
+    "root": {
+        "id": "root",
+        "label": "Root",
+        "children": ["currency", "communities", "finance", "tracking", "computing-needs", "developer-tools", "gambling", "gaming" ]
+    },
+    "currency": {
+        "id": "currency",
+        "label": "Currency",
+        "parent": "root",
+        "children": ["privacy-coins", "cryptocurrencies", "stable-coins"]
+    },
+    "privacy-coins": {
+        "id": "privacy-coins",
+        "label": "Privacy Coins",
+        "parent": "currency",
+        "children": ["SMART", "NAV", "XZC", "ZEN", "XVG", "PIVX",  "BCN", "ETN", "KMD", "ZEC", "XMR", "DASH"]
+    },
+    "cryptocurrencies": {
+        "id": "cryptocurrencies",
+        "label": "Cryptocurrencies",
+        "parent": "currency",
+        "children": ["BTC", "BCH", "XRP", "LTC", "ETC", "XLM", "DCR", "PURA", "DOGE", "MONA"]
+    },
+    "stable-coins": {
+        "id": "stable-coins",
+        "label": "Stable Coins",
+        "parent": "currency",
+        "children": ["BNT"]
+    },  
+    "communities": {
+        "id": "communities",
+        "label": "Communities",
+        "parent": "root",
+        "children": ["marketplace", "marketing", "prediction", "content"]
+    },
+    "marketplace": {
+        "id": "marketplace",
+        "label": "MarketPlace",
+        "parent": "communities",
+        "children": ["SYS", "PART"]
+    },
+    "marketing": {
+        "id": "marketing",
+        "label": "Marketing",
+        "parent": "communities",
+        "children": ["BAT", "ADT"]
+    },
+    "prediction": {
+        "id": "prediction",
+        "label": "Prediction",
+        "parent": "communities",
+        "children": ["REP", "GNO"]
+    },
+    "content": {
+        "id": "content",
+        "label": "Content",
+        "parent": "communities",
+        "children": ["STEEM", "SNGLS"]
+    },
+    "finance": {
+        "id" : "finance",
+        "label" : "Finance",
+        "parent": "root",
+        "children": ["bank-like-services", "insurance", "record-keeping"]
+    },
+    "bank-like-services": {
+        "id": "bank-like-services",
+        "label": "Bank Like Services",
+        "parent": "finance",
+        "children": ["SALT", "PAY", "PPT", "MCO", "OMG", "RCN", "MTL"]
+
+    },
+    "insurance": {
+        "id": "insurance",
+        "label": "Insurance",
+        "parent": "finance",
+        "children": []
+    },
+    "record-keeping": {
+        "id": "record-keeping",
+        "label": "Record Keeping",
+        "parent": "finance",
+        "children": ["FCT"]
+    },
+    "tracking": {
+        "id" : "tracking",
+        "label" : "Tracking",
+        "parent": "root",
+        "children": ["products", "identity"]
+    },
+    "products": {
+        "id" : "products",
+        "label" : "Products",
+        "parent": "tracking",
+        "children": ["WTC"]
+    },
+    "identity": {
+        "id" : "identity",
+        "label" : "Identity",
+        "parent": "tracking",
+        "children": ["CVC", "ETP", "GXS"]
+    },
+    "developer-tools": {
+        "id" : "developer-tools",
+        "label" : "Developer Tools",
+        "parent": "root",
+        "children": ["LSK", "QTUM", "NEO", "ETH", "EOS"]
+    },
+    "computing-needs": {
+        "id" : "computing-needs",
+        "label" : "Computing Needs",
+        "parent": "root",
+        "children": ["energy"]
+    },
+    "energy": {
+        "id" : "energy",
+        "label" : "Energy",
+        "parent": "computing-needs",
+        "children": ["POWR"]
+    },
+    "gambling": {
+        "id": "gambling",
+        "label": "Gambling",
+        "parent": "root",
+        "children": ["FUN"]
+    },
+    "gaming":{
+        "id": "gaming",
+        "label": "Gaming",
+        "parent": "root",
+        "children": ["GAME"]
+    }
+   
+}
